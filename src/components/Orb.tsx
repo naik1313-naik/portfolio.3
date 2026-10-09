@@ -61,7 +61,7 @@ function Orbiter({ radius, speed, color, tilt, phase }: { radius: number; speed:
 function Portrait() {
   const group = useRef<THREE.Group>(null);
   const q = useMemo(() => new THREE.Quaternion(), []);
-  const portrait = useLoader(THREE.TextureLoader, '/assets/portrait.jpg');
+  const portrait = useLoader(THREE.TextureLoader, `${import.meta.env.BASE_URL}assets/portrait.jpg`);
 
   useEffect(() => {
     portrait.colorSpace = THREE.SRGBColorSpace;

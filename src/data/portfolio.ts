@@ -24,8 +24,8 @@ export const profile = {
     github: 'https://github.com/naik1313-naik',
   },
   portrait: {
-    src: '/assets/portrait.jpg',
-    srcSet: '/assets/portrait.jpg 1100w',
+    src: `${import.meta.env.BASE_URL}assets/portrait.jpg`,
+    srcSet: `${import.meta.env.BASE_URL}assets/portrait.jpg 1100w`,
     alt: 'Portrait of Sumeet Naik',
   },
   interests: ['Software & data', 'AI / machine learning', 'Creative development', '3D on the web'],
